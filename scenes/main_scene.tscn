@@ -40,6 +40,7 @@ disabled = true
 [node name="BackSplashParticles" type="CPUParticles3D" parent="Boat"]
 transform = Transform3D(1, -1.21652e-31, 0, -1.21652e-31, 1, 0, 0, 0, 1, -0.0352571, 0.104606, -0.270311)
 material_override = SubResource("StandardMaterial3D_yl5tq")
+emitting = false
 lifetime = 0.2
 randomness = 0.1
 mesh = ExtResource("5_oqgbx")
@@ -57,12 +58,12 @@ scale_amount_min = 0.05
 scale_amount_max = 0.1
 
 [node name="BoatCamera" type="Camera3D" parent="."]
-transform = Transform3D(0.857167, -0.266034, 0.44101, 2.98655e-16, 0.856267, 0.516533, -0.515038, -0.442755, 0.733964, 1, 1.5, 1.5)
+transform = Transform3D(0.576432, -0.422083, 0.699694, 2.98655e-16, 0.856267, 0.516533, -0.817145, -0.297747, 0.49358, 4.9, 1.5, 4.3)
 projection = 1
 current = true
 size = 2.0
 near = 0.001
-far = 200.0
+far = 10.0
 script = ExtResource("4_w1fsp")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]

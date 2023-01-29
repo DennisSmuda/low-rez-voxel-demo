@@ -12,5 +12,3 @@ func _ready():
 	else:
 		texture = game_viewport.get_texture() as ViewportTexture
 		texture.set_viewport_path_in_scene("GameTextureRect/GameViewport")
-		
-
