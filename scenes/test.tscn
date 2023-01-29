@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://cvgitt770vphn"]
+
+[ext_resource type="PackedScene" uid="uid://c51u1glss5pl8" path="res://scenes/main_scene.tscn" id="1_xgy50"]
+[ext_resource type="PackedScene" uid="uid://bptkabtardehf" path="res://scenes/ui/hud.tscn" id="2_q5qh2"]
+
+[node name="Test" type="Node3D"]
+
+[node name="HUD" parent="." instance=ExtResource("2_q5qh2")]
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
+handle_input_locally = false
+size = Vector2i(240, 135)
+render_target_update_mode = 4
+
+[node name="MainScene" parent="SubViewportContainer/SubViewport" instance=ExtResource("1_xgy50")]

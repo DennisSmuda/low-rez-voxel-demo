@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://bjo10nm37s3y6"]
+
+[ext_resource type="ArrayMesh" uid="uid://bhqsato1uaj0p" path="res://resources/water_block.obj" id="1_2eu4c"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bm317"]
+albedo_color = Color(0.0392157, 0.360784, 0.623529, 1)
+distance_fade_max_distance = 100.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7dj0e"]
+size = Vector3(1, 1, 0.757697)
+
+[node name="WaterBlock" type="StaticBody3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+material_override = SubResource("StandardMaterial3D_bm317")
+cast_shadow = 0
+mesh = ExtResource("1_2eu4c")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0.1, 0.1, -0.1)
+shape = SubResource("BoxShape3D_7dj0e")

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bhqsato1uaj0p"
+path="res://.godot/imported/water_block.obj-ea825e15038bea5eea88ed4eb3e423bf.mesh"
+
+[deps]
+
+files=["res://.godot/imported/water_block.obj-ea825e15038bea5eea88ed4eb3e423bf.mesh"]
+
+source_file="res://resources/water_block.obj"
+dest_files=["res://.godot/imported/water_block.obj-ea825e15038bea5eea88ed4eb3e423bf.mesh", "res://.godot/imported/water_block.obj-ea825e15038bea5eea88ed4eb3e423bf.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(2, 2, 2)
+offset_mesh=Vector3(4, 2.08165e-12, -4)
+optimize_mesh=true

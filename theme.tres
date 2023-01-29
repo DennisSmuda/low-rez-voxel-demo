@@ -1,0 +1,8 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://ejmopina3jfo"]
+
+[ext_resource type="FontFile" uid="uid://c8aatb5u4diok" path="res://resources/fonts/Efforts.ttf" id="1_0t6kw"]
+
+[resource]
+default_font = ExtResource("1_0t6kw")
+default_font_size = 32
+Label/constants/line_spacing = 2
