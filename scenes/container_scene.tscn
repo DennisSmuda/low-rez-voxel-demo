@@ -2,7 +2,9 @@
 
 [ext_resource type="PackedScene" uid="uid://c51u1glss5pl8" path="res://scenes/main_scene.tscn" id="1_dimrm"]
 [ext_resource type="PackedScene" uid="uid://bptkabtardehf" path="res://scenes/ui/hud.tscn" id="2_1egmy"]
-[ext_resource type="Script" path="res://scenes/ui/GameTextureRect.gd" id="2_3g6sj"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_obv6c"]
+viewport_path = NodePath("GameTextureRect/GameViewport")
 
 [node name="ContainerScene" type="Node3D"]
 
@@ -13,7 +15,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("2_3g6sj")
+texture = SubResource("ViewportTexture_obv6c")
 
 [node name="GameViewport" type="SubViewport" parent="GameTextureRect"]
 handle_input_locally = false
